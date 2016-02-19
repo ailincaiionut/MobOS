@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDD8593B1C6BC87600AC51D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD8593A1C6BC87600AC51D6 /* main.m */; };
+		BDD859571C6BC91400AC51D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD859511C6BC91400AC51D6 /* AppDelegate.m */; };
+		BDD859591C6BC91400AC51D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD859551C6BC91400AC51D6 /* Main.storyboard */; };
+		BDD8595A1C6BC91400AC51D6 /* TVHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD859561C6BC91400AC51D6 /* TVHistory.storyboard */; };
+		BDD859611C6BDA1400AC51D6 /* TVHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD859601C6BDA1400AC51D6 /* TVHistoryViewController.m */; };
+		BDD859641C6BE14100AC51D6 /* TvOSDevelopment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD859631C6BE14100AC51D6 /* TvOSDevelopment.storyboard */; };
+		F32C40F21C7106210089784E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32C40F11C7106210089784E /* Assets.xcassets */; };
+		F32C41761C7112A60089784E /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32C40E21C7105E20089784E /* TVServices.framework */; };
+		F32C417A1C7112A60089784E /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F32C41791C7112A60089784E /* ServiceProvider.m */; };
+		F32C417E1C7112A60089784E /* MobOSTopShelf.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F32C41751C7112A60089784E /* MobOSTopShelf.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F34C34EA1C6F61E1001B280A /* FocusableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F34C34E91C6F61E1001B280A /* FocusableControl.m */; };
+		F34C34EF1C6FCDBF001B280A /* PresentationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34C34EE1C6FCDBF001B280A /* PresentationDetailsViewController.m */; };
+		F34C34F61C6FCEBB001B280A /* ScreenshotsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F34C34F51C6FCEBB001B280A /* ScreenshotsDataSource.m */; };
+		F34C34F91C6FCEE4001B280A /* ScreenshotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F34C34F81C6FCEE4001B280A /* ScreenshotCollectionViewCell.m */; };
+		F36926431C6E69C700F8AC58 /* CrossViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F36926421C6E69C700F8AC58 /* CrossViewController.m */; };
+		F38B37631C6F3A6F00DB2488 /* TVOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38B37621C6F3A6F00DB2488 /* TVOSViewController.m */; };
+		F3E235371C7458BD000C914D /* screenshot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235321C7458BD000C914D /* screenshot0.jpg */; };
+		F3E235381C7458BD000C914D /* screenshot0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235321C7458BD000C914D /* screenshot0.jpg */; };
+		F3E235391C7458BD000C914D /* screenshot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235331C7458BD000C914D /* screenshot1.jpg */; };
+		F3E2353A1C7458BD000C914D /* screenshot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235331C7458BD000C914D /* screenshot1.jpg */; };
+		F3E2353B1C7458BD000C914D /* screenshot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235341C7458BD000C914D /* screenshot2.jpg */; };
+		F3E2353C1C7458BD000C914D /* screenshot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235341C7458BD000C914D /* screenshot2.jpg */; };
+		F3E2353D1C7458BD000C914D /* screenshot3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235351C7458BD000C914D /* screenshot3.jpg */; };
+		F3E2353E1C7458BD000C914D /* screenshot3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235351C7458BD000C914D /* screenshot3.jpg */; };
+		F3E2353F1C7458BD000C914D /* screenshot4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235361C7458BD000C914D /* screenshot4.jpg */; };
+		F3E235401C7458BD000C914D /* screenshot4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E235361C7458BD000C914D /* screenshot4.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F32C417C1C7112A60089784E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD8592E1C6BC87600AC51D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32C41741C7112A60089784E;
+			remoteInfo = MobOSTopShelf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F32C40EF1C7105E20089784E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F32C417E1C7112A60089784E /* MobOSTopShelf.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BDD859361C6BC87600AC51D6 /* MobOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD8593A1C6BC87600AC51D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDD859471C6BC87600AC51D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD859501C6BC91400AC51D6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDD859511C6BC91400AC51D6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDD859551C6BC91400AC51D6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDD859561C6BC91400AC51D6 /* TVHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TVHistory.storyboard; sourceTree = "<group>"; };
+		BDD8595F1C6BDA1400AC51D6 /* TVHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVHistoryViewController.h; sourceTree = "<group>"; };
+		BDD859601C6BDA1400AC51D6 /* TVHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVHistoryViewController.m; sourceTree = "<group>"; };
+		BDD859631C6BE14100AC51D6 /* TvOSDevelopment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TvOSDevelopment.storyboard; sourceTree = "<group>"; };
+		F32C40E21C7105E20089784E /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		F32C40F11C7106210089784E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32C41751C7112A60089784E /* MobOSTopShelf.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MobOSTopShelf.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32C41781C7112A60089784E /* ServiceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceProvider.h; sourceTree = "<group>"; };
+		F32C41791C7112A60089784E /* ServiceProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceProvider.m; sourceTree = "<group>"; };
+		F32C417B1C7112A60089784E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34C34E81C6F61E1001B280A /* FocusableControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusableControl.h; sourceTree = "<group>"; };
+		F34C34E91C6F61E1001B280A /* FocusableControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusableControl.m; sourceTree = "<group>"; };
+		F34C34ED1C6FCDBF001B280A /* PresentationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationDetailsViewController.h; sourceTree = "<group>"; };
+		F34C34EE1C6FCDBF001B280A /* PresentationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationDetailsViewController.m; sourceTree = "<group>"; };
+		F34C34F41C6FCEBB001B280A /* ScreenshotsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotsDataSource.h; sourceTree = "<group>"; };
+		F34C34F51C6FCEBB001B280A /* ScreenshotsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotsDataSource.m; sourceTree = "<group>"; };
+		F34C34F71C6FCEE4001B280A /* ScreenshotCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenshotCollectionViewCell.h; sourceTree = "<group>"; };
+		F34C34F81C6FCEE4001B280A /* ScreenshotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenshotCollectionViewCell.m; sourceTree = "<group>"; };
+		F36926411C6E69C700F8AC58 /* CrossViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossViewController.h; sourceTree = "<group>"; };
+		F36926421C6E69C700F8AC58 /* CrossViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossViewController.m; sourceTree = "<group>"; };
+		F38B37611C6F3A6F00DB2488 /* TVOSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVOSViewController.h; sourceTree = "<group>"; };
+		F38B37621C6F3A6F00DB2488 /* TVOSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVOSViewController.m; sourceTree = "<group>"; };
+		F3E235321C7458BD000C914D /* screenshot0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot0.jpg; sourceTree = "<group>"; };
+		F3E235331C7458BD000C914D /* screenshot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot1.jpg; sourceTree = "<group>"; };
+		F3E235341C7458BD000C914D /* screenshot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot2.jpg; sourceTree = "<group>"; };
+		F3E235351C7458BD000C914D /* screenshot3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot3.jpg; sourceTree = "<group>"; };
+		F3E235361C7458BD000C914D /* screenshot4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot4.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD859331C6BC87600AC51D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32C41721C7112A60089784E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32C41761C7112A60089784E /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDD8592D1C6BC87600AC51D6 = {
+			isa = PBXGroup;
+			children = (
+				BDD859381C6BC87600AC51D6 /* MobOS */,
+				F32C41771C7112A60089784E /* MobOSTopShelf */,
+				F32C40E11C7105E20089784E /* Frameworks */,
+				BDD859371C6BC87600AC51D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD859371C6BC87600AC51D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD859361C6BC87600AC51D6 /* MobOS.app */,
+				F32C41751C7112A60089784E /* MobOSTopShelf.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD859381C6BC87600AC51D6 /* MobOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8594F1C6BC91400AC51D6 /* Classes */,
+				BDD859541C6BC91400AC51D6 /* Storyboards */,
+				F32C40F01C7106210089784E /* Resources */,
+				BDD859471C6BC87600AC51D6 /* Info.plist */,
+				F3E235311C7458BD000C914D /* Images */,
+				BDD859391C6BC87600AC51D6 /* Supporting Files */,
+			);
+			path = MobOS;
+			sourceTree = "<group>";
+		};
+		BDD859391C6BC87600AC51D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8593A1C6BC87600AC51D6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDD8594F1C6BC91400AC51D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8595E1C6BDA1400AC51D6 /* TVHistory */,
+				BDD859621C6BE12800AC51D6 /* tvOSDevelopment */,
+				F34C34E41C6F4E36001B280A /* HandsOn */,
+				BDD859501C6BC91400AC51D6 /* AppDelegate.h */,
+				BDD859511C6BC91400AC51D6 /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BDD859541C6BC91400AC51D6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDD859551C6BC91400AC51D6 /* Main.storyboard */,
+				BDD859561C6BC91400AC51D6 /* TVHistory.storyboard */,
+				BDD859631C6BE14100AC51D6 /* TvOSDevelopment.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BDD8595E1C6BDA1400AC51D6 /* TVHistory */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8595F1C6BDA1400AC51D6 /* TVHistoryViewController.h */,
+				BDD859601C6BDA1400AC51D6 /* TVHistoryViewController.m */,
+			);
+			path = TVHistory;
+			sourceTree = "<group>";
+		};
+		BDD859621C6BE12800AC51D6 /* tvOSDevelopment */ = {
+			isa = PBXGroup;
+			children = (
+				F34C34F01C6FCE21001B280A /* PresentationsDetails */,
+				F38B37611C6F3A6F00DB2488 /* TVOSViewController.h */,
+				F38B37621C6F3A6F00DB2488 /* TVOSViewController.m */,
+				F36926411C6E69C700F8AC58 /* CrossViewController.h */,
+				F36926421C6E69C700F8AC58 /* CrossViewController.m */,
+			);
+			path = tvOSDevelopment;
+			sourceTree = "<group>";
+		};
+		F32C40E11C7105E20089784E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F32C40E21C7105E20089784E /* TVServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F32C40F01C7106210089784E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F32C40F11C7106210089784E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F32C41771C7112A60089784E /* MobOSTopShelf */ = {
+			isa = PBXGroup;
+			children = (
+				F32C41781C7112A60089784E /* ServiceProvider.h */,
+				F32C41791C7112A60089784E /* ServiceProvider.m */,
+				F32C417B1C7112A60089784E /* Info.plist */,
+			);
+			path = MobOSTopShelf;
+			sourceTree = "<group>";
+		};
+		F34C34E41C6F4E36001B280A /* HandsOn */ = {
+			isa = PBXGroup;
+			children = (
+				F34C34E81C6F61E1001B280A /* FocusableControl.h */,
+				F34C34E91C6F61E1001B280A /* FocusableControl.m */,
+			);
+			path = HandsOn;
+			sourceTree = "<group>";
+		};
+		F34C34F01C6FCE21001B280A /* PresentationsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F34C34ED1C6FCDBF001B280A /* PresentationDetailsViewController.h */,
+				F34C34EE1C6FCDBF001B280A /* PresentationDetailsViewController.m */,
+				F34C34F41C6FCEBB001B280A /* ScreenshotsDataSource.h */,
+				F34C34F51C6FCEBB001B280A /* ScreenshotsDataSource.m */,
+				F34C34F71C6FCEE4001B280A /* ScreenshotCollectionViewCell.h */,
+				F34C34F81C6FCEE4001B280A /* ScreenshotCollectionViewCell.m */,
+			);
+			name = PresentationsDetails;
+			sourceTree = "<group>";
+		};
+		F3E235311C7458BD000C914D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F3E235321C7458BD000C914D /* screenshot0.jpg */,
+				F3E235331C7458BD000C914D /* screenshot1.jpg */,
+				F3E235341C7458BD000C914D /* screenshot2.jpg */,
+				F3E235351C7458BD000C914D /* screenshot3.jpg */,
+				F3E235361C7458BD000C914D /* screenshot4.jpg */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD859351C6BC87600AC51D6 /* MobOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD8594A1C6BC87600AC51D6 /* Build configuration list for PBXNativeTarget "MobOS" */;
+			buildPhases = (
+				BDD859321C6BC87600AC51D6 /* Sources */,
+				BDD859331C6BC87600AC51D6 /* Frameworks */,
+				BDD859341C6BC87600AC51D6 /* Resources */,
+				F32C40EF1C7105E20089784E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32C417D1C7112A60089784E /* PBXTargetDependency */,
+			);
+			name = MobOS;
+			productName = MobOS;
+			productReference = BDD859361C6BC87600AC51D6 /* MobOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F32C41741C7112A60089784E /* MobOSTopShelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32C417F1C7112A60089784E /* Build configuration list for PBXNativeTarget "MobOSTopShelf" */;
+			buildPhases = (
+				F32C41711C7112A60089784E /* Sources */,
+				F32C41721C7112A60089784E /* Frameworks */,
+				F32C41731C7112A60089784E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobOSTopShelf;
+			productName = MobOSTopShelf;
+			productReference = F32C41751C7112A60089784E /* MobOSTopShelf.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD8592E1C6BC87600AC51D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MobOS;
+				TargetAttributes = {
+					BDD859351C6BC87600AC51D6 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UXYMANA8TN;
+					};
+					F32C41741C7112A60089784E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UXYMANA8TN;
+					};
+				};
+			};
+			buildConfigurationList = BDD859311C6BC87600AC51D6 /* Build configuration list for PBXProject "MobOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDD8592D1C6BC87600AC51D6;
+			productRefGroup = BDD859371C6BC87600AC51D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD859351C6BC87600AC51D6 /* MobOS */,
+				F32C41741C7112A60089784E /* MobOSTopShelf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD859341C6BC87600AC51D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E235371C7458BD000C914D /* screenshot0.jpg in Resources */,
+				BDD859641C6BE14100AC51D6 /* TvOSDevelopment.storyboard in Resources */,
+				BDD859591C6BC91400AC51D6 /* Main.storyboard in Resources */,
+				F3E2353F1C7458BD000C914D /* screenshot4.jpg in Resources */,
+				F3E2353B1C7458BD000C914D /* screenshot2.jpg in Resources */,
+				F3E235391C7458BD000C914D /* screenshot1.jpg in Resources */,
+				BDD8595A1C6BC91400AC51D6 /* TVHistory.storyboard in Resources */,
+				F32C40F21C7106210089784E /* Assets.xcassets in Resources */,
+				F3E2353D1C7458BD000C914D /* screenshot3.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32C41731C7112A60089784E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E2353C1C7458BD000C914D /* screenshot2.jpg in Resources */,
+				F3E235401C7458BD000C914D /* screenshot4.jpg in Resources */,
+				F3E235381C7458BD000C914D /* screenshot0.jpg in Resources */,
+				F3E2353A1C7458BD000C914D /* screenshot1.jpg in Resources */,
+				F3E2353E1C7458BD000C914D /* screenshot3.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD859321C6BC87600AC51D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36926431C6E69C700F8AC58 /* CrossViewController.m in Sources */,
+				BDD8593B1C6BC87600AC51D6 /* main.m in Sources */,
+				F34C34EF1C6FCDBF001B280A /* PresentationDetailsViewController.m in Sources */,
+				BDD859611C6BDA1400AC51D6 /* TVHistoryViewController.m in Sources */,
+				F38B37631C6F3A6F00DB2488 /* TVOSViewController.m in Sources */,
+				BDD859571C6BC91400AC51D6 /* AppDelegate.m in Sources */,
+				F34C34F61C6FCEBB001B280A /* ScreenshotsDataSource.m in Sources */,
+				F34C34F91C6FCEE4001B280A /* ScreenshotCollectionViewCell.m in Sources */,
+				F34C34EA1C6F61E1001B280A /* FocusableControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32C41711C7112A60089784E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32C417A1C7112A60089784E /* ServiceProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F32C417D1C7112A60089784E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32C41741C7112A60089784E /* MobOSTopShelf */;
+			targetProxy = F32C417C1C7112A60089784E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BDD859481C6BC87600AC51D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		BDD859491C6BC87600AC51D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDD8594B1C6BC87600AC51D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MobOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobos.MobOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDD8594C1C6BC87600AC51D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MobOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobos.MobOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F32C41801C7112A60089784E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MobOSTopShelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobos.MobOS.MobOSTopShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F32C41811C7112A60089784E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MobOSTopShelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobos.MobOS.MobOSTopShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD859311C6BC87600AC51D6 /* Build configuration list for PBXProject "MobOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD859481C6BC87600AC51D6 /* Debug */,
+				BDD859491C6BC87600AC51D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD8594A1C6BC87600AC51D6 /* Build configuration list for PBXNativeTarget "MobOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD8594B1C6BC87600AC51D6 /* Debug */,
+				BDD8594C1C6BC87600AC51D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32C417F1C7112A60089784E /* Build configuration list for PBXNativeTarget "MobOSTopShelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32C41801C7112A60089784E /* Debug */,
+				F32C41811C7112A60089784E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD8592E1C6BC87600AC51D6 /* Project object */;
+}

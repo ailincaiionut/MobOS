@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="syX-bM-tCz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--1-->
+        <scene sceneID="f6z-oo-6x1">
+            <objects>
+                <viewController id="3cJ-7R-K1b" userLabel="1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tlb-V9-e3A"/>
+                        <viewControllerLayoutGuide type="bottom" id="UKS-EP-CPN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VdR-nO-cYI">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macintosh TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ9-m4-GRf">
+                                <rect key="frame" x="250" y="150" width="597" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQz-Ml-mwf">
+                                <rect key="frame" x="250" y="370" width="620" height="283"/>
+                                <string key="text">1993 - 1994
+
+10.000</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyX-b9-eO6">
+                                <rect key="frame" x="1720" y="954" width="160" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="JNz-Cc-blL" kind="show" id="IOp-Fz-F9F"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Macintosh_TV" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-r2-W3N">
+                                <rect key="frame" x="1070" y="240" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D1g-r2-W3N" secondAttribute="height" id="PiL-4B-Em4"/>
+                                    <constraint firstAttribute="height" constant="600" id="hsO-HP-zpw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="D1g-r2-W3N" secondAttribute="trailing" constant="250" id="0xX-I1-F2o"/>
+                            <constraint firstItem="DQ9-m4-GRf" firstAttribute="leading" secondItem="VdR-nO-cYI" secondAttribute="leading" constant="250" id="BDs-QE-7WG"/>
+                            <constraint firstItem="D1g-r2-W3N" firstAttribute="centerY" secondItem="VdR-nO-cYI" secondAttribute="centerY" id="L5R-hM-ngx"/>
+                            <constraint firstAttribute="trailing" secondItem="dyX-b9-eO6" secondAttribute="trailing" constant="40" id="OlR-Ic-kxa"/>
+                            <constraint firstItem="aQz-Ml-mwf" firstAttribute="leading" secondItem="DQ9-m4-GRf" secondAttribute="leading" id="SKX-rR-An1"/>
+                            <constraint firstItem="D1g-r2-W3N" firstAttribute="leading" secondItem="aQz-Ml-mwf" secondAttribute="trailing" constant="200" id="Sza-EM-dk1"/>
+                            <constraint firstItem="aQz-Ml-mwf" firstAttribute="top" secondItem="DQ9-m4-GRf" secondAttribute="bottom" constant="100" id="TBy-eL-ntK"/>
+                            <constraint firstItem="DQ9-m4-GRf" firstAttribute="top" secondItem="VdR-nO-cYI" secondAttribute="topMargin" constant="150" id="UwI-Ps-cpS"/>
+                            <constraint firstItem="UKS-EP-CPN" firstAttribute="top" secondItem="dyX-b9-eO6" secondAttribute="bottom" constant="40" id="xOs-7t-U7i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MUr-rx-3aD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kll-DW-ye6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628" y="53"/>
+        </scene>
+        <!--2-->
+        <scene sceneID="b1c-nO-qA5">
+            <objects>
+                <viewController id="JNz-Cc-blL" userLabel="2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6sV-Kg-eoK"/>
+                        <viewControllerLayoutGuide type="bottom" id="hEQ-er-qIe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ohQ-jE-sGR">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple TV 1st Gen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBF-he-ikh">
+                                <rect key="frame" x="250" y="150" width="746" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHG-GA-Ffe">
+                                <rect key="frame" x="250" y="370" width="620" height="283"/>
+                                <string key="text">2006
+
+40 / 160 Gb</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXW-39-y0C">
+                                <rect key="frame" x="1720" y="954" width="160" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="YLi-x6-x52" kind="show" id="Q8L-re-U25"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1st-gen" translatesAutoresizingMaskIntoConstraints="NO" id="ojH-hP-UAb">
+                                <rect key="frame" x="1070" y="240" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ojH-hP-UAb" secondAttribute="height" id="7i9-PR-jwH"/>
+                                    <constraint firstAttribute="height" constant="600" id="u6k-8Z-YOz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GHG-GA-Ffe" firstAttribute="leading" secondItem="RBF-he-ikh" secondAttribute="leading" id="60k-SC-gGK"/>
+                            <constraint firstItem="GHG-GA-Ffe" firstAttribute="top" secondItem="RBF-he-ikh" secondAttribute="bottom" constant="100" id="Dpr-Fd-bIK"/>
+                            <constraint firstItem="ojH-hP-UAb" firstAttribute="centerY" secondItem="ohQ-jE-sGR" secondAttribute="centerY" id="J5i-9t-Ycl"/>
+                            <constraint firstAttribute="trailing" secondItem="ojH-hP-UAb" secondAttribute="trailing" constant="250" id="QmE-rq-8CU"/>
+                            <constraint firstItem="ojH-hP-UAb" firstAttribute="leading" secondItem="GHG-GA-Ffe" secondAttribute="trailing" constant="200" id="UuP-8J-vtu"/>
+                            <constraint firstAttribute="trailing" secondItem="xXW-39-y0C" secondAttribute="trailing" constant="40" id="jZE-u7-J6q"/>
+                            <constraint firstItem="RBF-he-ikh" firstAttribute="top" secondItem="ohQ-jE-sGR" secondAttribute="topMargin" constant="150" id="jdo-2Z-fus"/>
+                            <constraint firstItem="RBF-he-ikh" firstAttribute="leading" secondItem="ohQ-jE-sGR" secondAttribute="leading" constant="250" id="kUW-EQ-fzf"/>
+                            <constraint firstItem="hEQ-er-qIe" firstAttribute="top" secondItem="xXW-39-y0C" secondAttribute="bottom" constant="40" id="u8u-Mz-3CS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smp-0W-rK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5684" y="53"/>
+        </scene>
+        <!--3-->
+        <scene sceneID="hBV-RY-uOW">
+            <objects>
+                <viewController id="YLi-x6-x52" userLabel="3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qsi-Ir-XVU"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Pk-yw-OWX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T55-9P-ALd">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple TV 2nd Gen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9P-Hw-LaL">
+                                <rect key="frame" x="250" y="150" width="791" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD5-NE-a3E">
+                                <rect key="frame" x="250" y="370" width="620" height="283"/>
+                                <string key="text">2010
+
+1/4</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGH-IR-Mge">
+                                <rect key="frame" x="1720" y="954" width="160" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="uHz-Qy-BgX" kind="show" id="hUZ-JC-eRA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2nd-gen" translatesAutoresizingMaskIntoConstraints="NO" id="S9R-cz-6wI">
+                                <rect key="frame" x="1070" y="240" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="AZg-q6-wr5"/>
+                                    <constraint firstAttribute="width" secondItem="S9R-cz-6wI" secondAttribute="height" id="bZ7-Ug-kpc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="S9R-cz-6wI" firstAttribute="centerY" secondItem="T55-9P-ALd" secondAttribute="centerY" id="8ZK-CZ-dJQ"/>
+                            <constraint firstAttribute="trailing" secondItem="S9R-cz-6wI" secondAttribute="trailing" constant="250" id="9pV-b1-dWQ"/>
+                            <constraint firstItem="t9P-Hw-LaL" firstAttribute="leading" secondItem="T55-9P-ALd" secondAttribute="leading" constant="250" id="AG4-Yc-MJR"/>
+                            <constraint firstItem="S9R-cz-6wI" firstAttribute="leading" secondItem="bD5-NE-a3E" secondAttribute="trailing" constant="200" id="NFk-5A-4mj"/>
+                            <constraint firstItem="bD5-NE-a3E" firstAttribute="top" secondItem="t9P-Hw-LaL" secondAttribute="bottom" constant="100" id="aCn-ec-zel"/>
+                            <constraint firstItem="5Pk-yw-OWX" firstAttribute="top" secondItem="JGH-IR-Mge" secondAttribute="bottom" constant="40" id="fVq-QK-RRp"/>
+                            <constraint firstItem="t9P-Hw-LaL" firstAttribute="top" secondItem="T55-9P-ALd" secondAttribute="topMargin" constant="150" id="fXE-nW-qgD"/>
+                            <constraint firstAttribute="trailing" secondItem="JGH-IR-Mge" secondAttribute="trailing" constant="40" id="g8f-LH-Z5r"/>
+                            <constraint firstItem="bD5-NE-a3E" firstAttribute="leading" secondItem="t9P-Hw-LaL" secondAttribute="leading" id="vzO-aR-k7I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OsG-Y4-Pl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7724" y="53"/>
+        </scene>
+        <!--4-->
+        <scene sceneID="Fob-DT-ZYc">
+            <objects>
+                <viewController id="uHz-Qy-BgX" userLabel="4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KC7-oP-2y0"/>
+                        <viewControllerLayoutGuide type="bottom" id="78h-2v-OLC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yYg-cl-zqH">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple TV 3rd Gen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Da-H6-mFF">
+                                <rect key="frame" x="250" y="150" width="769" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmi-QK-gZc">
+                                <rect key="frame" x="250" y="370" width="620" height="283"/>
+                                <string key="text">2012
+
+1080p</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzW-2A-qTp">
+                                <rect key="frame" x="1720" y="954" width="160" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Xc8-70-1Y4" kind="show" id="79d-Vx-B0I"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2nd-gen" translatesAutoresizingMaskIntoConstraints="NO" id="deJ-0E-0dE">
+                                <rect key="frame" x="1070" y="240" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="deJ-0E-0dE" secondAttribute="height" id="jjK-ye-5JT"/>
+                                    <constraint firstAttribute="height" constant="600" id="nzb-4h-gg8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Tmi-QK-gZc" firstAttribute="leading" secondItem="7Da-H6-mFF" secondAttribute="leading" id="27M-GH-4bU"/>
+                            <constraint firstAttribute="trailing" secondItem="WzW-2A-qTp" secondAttribute="trailing" constant="40" id="BHc-2Z-pNP"/>
+                            <constraint firstItem="78h-2v-OLC" firstAttribute="top" secondItem="WzW-2A-qTp" secondAttribute="bottom" constant="40" id="Ds6-ck-43S"/>
+                            <constraint firstItem="7Da-H6-mFF" firstAttribute="leading" secondItem="yYg-cl-zqH" secondAttribute="leading" constant="250" id="Ige-Bw-TgL"/>
+                            <constraint firstItem="deJ-0E-0dE" firstAttribute="centerY" secondItem="yYg-cl-zqH" secondAttribute="centerY" id="MCn-fk-6Vg"/>
+                            <constraint firstItem="deJ-0E-0dE" firstAttribute="leading" secondItem="Tmi-QK-gZc" secondAttribute="trailing" constant="200" id="Om3-Vu-GSe"/>
+                            <constraint firstItem="7Da-H6-mFF" firstAttribute="top" secondItem="yYg-cl-zqH" secondAttribute="topMargin" constant="150" id="i4S-Sa-sTw"/>
+                            <constraint firstItem="Tmi-QK-gZc" firstAttribute="top" secondItem="7Da-H6-mFF" secondAttribute="bottom" constant="100" id="qgh-9Q-rlS"/>
+                            <constraint firstAttribute="trailing" secondItem="deJ-0E-0dE" secondAttribute="trailing" constant="250" id="ynd-ml-s5R"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hnf-zV-skL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9740" y="53"/>
+        </scene>
+        <!--5-->
+        <scene sceneID="Owa-Rf-YqF">
+            <objects>
+                <viewController id="Xc8-70-1Y4" userLabel="5" customClass="TVHistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j6O-c4-aSz"/>
+                        <viewControllerLayoutGuide type="bottom" id="JjE-Dt-iN4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XD8-Op-pax">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple TV 4th Gen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzS-I7-XLG">
+                                <rect key="frame" x="250" y="150" width="770" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn4-Xq-YFj">
+                                <rect key="frame" x="250" y="370" width="620" height="283"/>
+                                <string key="text">2015
+
+tvOS</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgA-EX-hPH">
+                                <rect key="frame" x="1709" y="954" width="171" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="Xc8-70-1Y4" eventType="primaryActionTriggered" id="Qlj-MG-ZoM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4th-gen" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-xb-gVz">
+                                <rect key="frame" x="1070" y="240" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="RrJ-U1-hR1"/>
+                                    <constraint firstAttribute="width" secondItem="XBb-xb-gVz" secondAttribute="height" id="vuY-Je-h0v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Qn4-Xq-YFj" firstAttribute="leading" secondItem="DzS-I7-XLG" secondAttribute="leading" id="5c6-7M-fMc"/>
+                            <constraint firstItem="DzS-I7-XLG" firstAttribute="top" secondItem="XD8-Op-pax" secondAttribute="topMargin" constant="150" id="6YS-19-F7B"/>
+                            <constraint firstAttribute="trailing" secondItem="tgA-EX-hPH" secondAttribute="trailing" constant="40" id="8JX-fl-jP7"/>
+                            <constraint firstItem="DzS-I7-XLG" firstAttribute="leading" secondItem="XD8-Op-pax" secondAttribute="leading" constant="250" id="MyO-nm-3ex"/>
+                            <constraint firstItem="JjE-Dt-iN4" firstAttribute="top" secondItem="tgA-EX-hPH" secondAttribute="bottom" constant="40" id="Ns6-Os-LAs"/>
+                            <constraint firstAttribute="trailing" secondItem="XBb-xb-gVz" secondAttribute="trailing" constant="250" id="OBT-rb-g6B"/>
+                            <constraint firstItem="Qn4-Xq-YFj" firstAttribute="top" secondItem="DzS-I7-XLG" secondAttribute="bottom" constant="100" id="UGF-Rx-w3Z"/>
+                            <constraint firstItem="XBb-xb-gVz" firstAttribute="centerY" secondItem="XD8-Op-pax" secondAttribute="centerY" id="dbD-dQ-2Bc"/>
+                            <constraint firstItem="XBb-xb-gVz" firstAttribute="leading" secondItem="Qn4-Xq-YFj" secondAttribute="trailing" constant="200" id="wcf-qe-dpa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5p-1H-3Un" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9740" y="53"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S1g-0A-TwJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="syX-bM-tCz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rha-QS-b3s">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3cJ-7R-K1b" kind="relationship" relationship="rootViewController" id="RMh-9R-D9O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Of-m9-Uva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496" y="53"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1st-gen" width="1000" height="1000"/>
+        <image name="2nd-gen" width="1500" height="1500"/>
+        <image name="4th-gen" width="727" height="621"/>
+        <image name="Macintosh_TV" width="485" height="460"/>
+    </resources>
+</document>
